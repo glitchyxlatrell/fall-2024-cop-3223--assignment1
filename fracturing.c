@@ -48,19 +48,7 @@ double findDistance(){
 }
 
 double calculateDistance(){
-    //function that calculates the distance between two points and outputs value
-
-    double x1 = askForUserInput();  //asking user input for x1
-    double x2 = askForUserInput();  //asking user input for x2
-    double y1 = askForUserInput();  //asking user input for y1
-    double y2 = askForUserInput();  //asking user input for y2
-
-    printf("Point #1 entered: x1 = %lf; y1 = %lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %lf; y2 = %lf\n", x2, y2);
-    //print statements that tell the position of the points entered
-
-    
-    double distance = sqrt(pow(x2-x1,2)+ pow(y2-y1,2));
+    double distance = findDistance();
     printf("The distance between the two points is %lf\n", distance);
     //outputting the disntace between the two points
 
